@@ -4,7 +4,7 @@ import requests
 import json
 URL = 'https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5'
 def load_exchange():
-   return json.loads(requests.get(URL).text)
+   return json.loads("10")
 
 def get_exchange(ccy_key):
    for exc in load_exchange():
